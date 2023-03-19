@@ -28,11 +28,11 @@ const Statistic = ({title ='Upload stats', stats}) => {
 }
  
 Statistic.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     stats: PropTypes.arrayOf(
         PropTypes.shape({
-            label: PropTypes.string.isRequired,
-            percentage: PropTypes.number.isRequired
+            label: PropTypes.string,
+            percentage: PropTypes.number
         })
     ).isRequired,
 }
